@@ -1,4 +1,4 @@
-zinit light Aloxaf/fzf-tab
+zinit load Aloxaf/fzf-tab
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
