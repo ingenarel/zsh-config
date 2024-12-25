@@ -1,9 +1,9 @@
 # The following lines were added by compinstall
 
-zstyle ':completion:*' completer _complete _ignored _correct _approximate
-zstyle :compinstall filename '/home/ingenarel/.zshrc'
+# zstyle ':completion:*' completer _complete _ignored _correct _approximate
+# zstyle :compinstall filename '/home/ingenarel/.zshrc'
 
-autoload -Uz compinit
+autoload -U compinit
 compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
@@ -12,7 +12,12 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
 # End of lines configured by zsh-newuser-install
-eval "$(zoxide init zsh)"
+
+source ~/.config/zsh/plugins/init.zsh
+
+eval "$(zoxide init --no-aliases zsh)"
+alias z="__zoxide_z"
+alias zf="__zoxide_zi"
 eval "$(starship init zsh)"
 function yy() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
@@ -22,3 +27,4 @@ function yy() {
     fi
     rm -f -- "$tmp"
 }
+# fastfetch
