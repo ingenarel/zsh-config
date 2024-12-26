@@ -18,6 +18,7 @@ source ~/.config/zsh/plugins/init.zsh
 eval "$(zoxide init --no-aliases zsh)"
 alias z="__zoxide_z"
 alias zf="__zoxide_zi"
+alias btop="sudo btop"
 eval "$(starship init zsh)"
 function yy() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
