@@ -5,3 +5,4 @@ source "${ZINIT_HOME}/zinit.zsh"
 source ~/.config/zsh/plugins/fzf-tab-setup.zsh
 zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-syntax-highlighting
+zinit load hlissner/zsh-autopair
