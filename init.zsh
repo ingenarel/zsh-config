@@ -21,7 +21,7 @@ alias zf="__zoxide_zi"
 alias btop="sudo btop"
 eval "$(starship init zsh)"
 source <(fzf --zsh)
-path+=("$HOME/.local/pip-bins")
+path+=("$HOME/.local/pip-bins" "$HOME/.local/share/nvim/mason/bin")
 function yy() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
     yazi "$@" --cwd-file="$tmp"
