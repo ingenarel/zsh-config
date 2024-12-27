@@ -22,6 +22,7 @@ alias btop="sudo btop"
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 path+=("$HOME/.local/pip-bins" "$HOME/.local/share/nvim/mason/bin")
+export EDITOR="/usr/bin/nvim"
 function yy() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
     yazi "$@" --cwd-file="$tmp"
