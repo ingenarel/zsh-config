@@ -20,6 +20,8 @@ alias z="__zoxide_z"
 alias zf="__zoxide_zi"
 alias btop="sudo btop"
 eval "$(starship init zsh)"
+source <(fzf --zsh)
+path+=("$HOME/.local/pip-bins")
 function yy() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
     yazi "$@" --cwd-file="$tmp"
@@ -30,6 +32,7 @@ function yy() {
 }
 
 # Reuse or start a single ssh-agent
+# chatgpt written code starts
 SSH_ENV="$HOME/.ssh/ssh-agent.env"
 
 # Function to start ssh-agent
@@ -50,3 +53,4 @@ if [ -f "$SSH_ENV" ]; then
 else
     start_ssh_agent
 fi
+# chatgpt written code ends
