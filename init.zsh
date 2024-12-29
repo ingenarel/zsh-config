@@ -20,6 +20,7 @@ alias zf="__zoxide_zi"
 alias btop="sudo btop"
 eval "$(starship init zsh)"
 source <(fzf --zsh)
+eval $(thefuck --alias f)
 path+=("$HOME/.local/pip-bins" "$HOME/.local/share/nvim/mason/bin")
 export EDITOR="/usr/bin/nvim"
 function yy() {
