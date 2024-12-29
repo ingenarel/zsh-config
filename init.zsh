@@ -55,3 +55,7 @@ else
     start_ssh_agent
 fi
 # chatgpt written code ends
+
+if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
+    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
+fi
