@@ -5,8 +5,7 @@
 
 autoload -U compinit
 compinit
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
+_comp_options+=(globdots)
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
