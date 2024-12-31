@@ -21,6 +21,8 @@ alias btop="sudo btop"
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 eval $(thefuck --alias f)
+alias graph="pacgraph --svg -b #000000 -l #013d35 -t #f40cfc -d #ffffff --show-req-by --by-area --explicits --opt-deps -f ~/Images/pacgraph/pacgraph"
+alias musicback="rclone sync /mnt/G/system\ files\(G\)/music drive-alt:music --progress --drive-use-trash=false --delete-excluded"
 path+=("$HOME/.local/pip-bins" "$HOME/.local/share/nvim/mason/bin")
 export EDITOR="/usr/bin/nvim"
 function yy() {
