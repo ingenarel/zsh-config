@@ -30,6 +30,7 @@ export CFLAGS="-Wall -Wextra -Wshadow -Wconversion -Wformat=2 -Winline -Wunsafe-
     -Wpointer-arith -Wpedantic -Wstrict-aliasing -Wcast-align -march=native\
     -mtune=generic -O2"
 export EDITOR="/usr/bin/nvim"
+export FZF_DEFAULT_OPTS="--bind=alt-n:down,alt-p:up"
 function yy() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
     yazi "$@" --cwd-file="$tmp"
