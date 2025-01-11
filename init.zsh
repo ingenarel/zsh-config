@@ -1,4 +1,3 @@
-source ~/.config/zsh/scripts/autostart-tmux.zsh
 # The following lines were added by compinstall
 
 # zstyle ':completion:*' completer _complete _ignored _correct _approximate
