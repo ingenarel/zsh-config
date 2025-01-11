@@ -31,7 +31,6 @@ export CFLAGS="-Wall -Wextra -Wshadow -Wconversion -Wformat=2 -Winline -Wunsafe-
     -mtune=generic -O2"
 export EDITOR="/usr/bin/nvim"
 export FZF_DEFAULT_OPTS="--bind=alt-n:down,alt-p:up"
-export TERM=tmux-256color
 function yy() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
     yazi "$@" --cwd-file="$tmp"
