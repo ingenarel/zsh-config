@@ -4,3 +4,4 @@ alias graph="pacgraph --svg -b #000000 -l #013d35 -t #f40cfc -d #ffffff --show-r
 alias musicback="rclone sync /mnt/G/system\ files\(G\)/music drive-alt:music --progress --drive-use-trash=false --delete-excluded"
 alias z="__zoxide_z"
 alias zf="__zoxide_zi"
+alias nzf='nvim "$(fzf)"'
