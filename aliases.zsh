@@ -5,3 +5,5 @@ alias musicback="rclone sync /mnt/G/system\ files\(G\)/music drive-alt:music --p
 alias z="__zoxide_z"
 alias zf="__zoxide_zi"
 alias nzf='nvim "$(fzf)"'
+alias ls='lsd --almost-all --color always --group-directories-first'
+alias lsl='lsd --almost-all --color always --group-directories-first -l'
