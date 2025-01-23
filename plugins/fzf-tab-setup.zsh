@@ -10,7 +10,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 # preview directory's content with eza when completing cd
 # zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --almost-all --color --group-directories-first --dereference-command-line --dereference-command-line-symlink-to-dir $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd --almost-all --color always --group-directories-first $realpath'
 # custom fzf flags
 # NOTE: fzf-tab does not follow FZF_DEFAULT_OPTS by default
 zstyle ':fzf-tab:*' fzf-flags --color=fg:1,fg+:2 --bind=tab:accept
