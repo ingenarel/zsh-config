@@ -7,3 +7,4 @@ alias zf="__zoxide_zi"
 alias nzf='nvim "$(fzf)"'
 alias ls='lsd --almost-all --color always --group-directories-first'
 alias lsl='lsd --almost-all --color always --group-directories-first -l'
+alias fastfetch='fastfetch --logo-padding-left $(( ( $(tput cols) - 93) / 2 ))'
