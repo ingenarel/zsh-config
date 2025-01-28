@@ -12,3 +12,4 @@ else
 fi
 export EDITOR="/usr/bin/nvim"
 export FZF_DEFAULT_OPTS="--bind=alt-n:down,alt-p:up"
+export GPG_TTY=$(tty)
