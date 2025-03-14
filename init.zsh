@@ -3,6 +3,7 @@
 # zstyle ':completion:*' completer _complete _ignored _correct _approximate
 # zstyle :compinstall filename '/home/ingenarel/.zshrc'
 
+
 autoload -U compinit
 compinit
 _comp_options+=(globdots)
