@@ -16,34 +16,27 @@ else
     start_ssh_agent
 fi
 
-if [[ -f $HOME/.ssh/github.pub ]]; then;
+if [[ -f $HOME/.ssh/git.pub ]]; then;
     ;
 else;
-    ssh-keygen -t ed25519 -C "ingenarelitems@gmail.com" -f $HOME/.ssh/github;
-    ssh-add $HOME/.ssh/github;
+    ssh-keygen -t ed25519 -C "ingenarelitems@gmail.com" -f $HOME/.ssh/git;
+    ssh-add $HOME/.ssh/git;
     echo "
     Host github.com
         User git
         Hostname github.com
         PreferredAuthentications publickey
-        IdentityFile $HOME/.ssh/github
+        IdentityFile $HOME/.ssh/git
         AddKeysToAgent yes
         IdentitiesOnly yes
-    " >> $HOME/.ssh/config;
-fi;
 
-if [[ -f $HOME/.ssh/gitlab.pub ]]; then;
-    ;
-else;
-    ssh-keygen -t ed25519 -C "ingenarelitems@gmail.com" -f $HOME/.ssh/gitlab;
-    ssh-add $HOME/.ssh/gitlab;
-    echo "
     Host gitlab.com
         User git
         Hostname gitlab.com
         PreferredAuthentications publickey
-        IdentityFile $HOME/.ssh/gitlab
+        IdentityFile $HOME/.ssh/git
         AddKeysToAgent yes
         IdentitiesOnly yes
+
     " >> $HOME/.ssh/config;
 fi;
