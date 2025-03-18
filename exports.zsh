@@ -2,6 +2,7 @@ export CC=clang
 if [ "$CC" = "clang" ]; then
     export CFLAGS="-Wall -Wextra -Wshadow -Wconversion -Wformat=2 -Winline -Wundef\
         -Wpointer-arith -Wpedantic -Wstrict-aliasing -Wcast-align -march=native\
+        -fsafe-buffer-usage-suggestions -Winvalid-constexpr\
         -mtune=native -O2"
 elif [ "$CC" = "gcc" ]; then
     export CFLAGS="-Wall -Wextra -Wshadow -Wconversion -Wformat=2 -Winline -Wunsafe-loop-optimizations -Wundef\
